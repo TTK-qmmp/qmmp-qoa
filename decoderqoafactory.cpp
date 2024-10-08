@@ -69,10 +69,18 @@ MetaDataModel* DecoderQOAFactory::createMetaDataModel(const QString &path, bool 
     return nullptr;
 }
 
+#if (QMMP_VERSION_INT < 0x10700) || (0x20000 <= QMMP_VERSION_INT && QMMP_VERSION_INT < 0x20200)
 void DecoderQOAFactory::showSettings(QWidget *parent)
 {
     Q_UNUSED(parent);
 }
+#else
+QDialog *DecoderQOAFactory::createSettings(QWidget *parent)
+{
+    Q_UNUSED(parent);
+    return nullptr;
+}
+#endif
 
 void DecoderQOAFactory::showAbout(QWidget *parent)
 {
