@@ -2,6 +2,7 @@
 
 #define QOA_IMPLEMENTATION
 #include "qoa.h"
+#include <string.h>
 
 qoaplay_desc *qoaplay_open(const char *path) {
     FILE *file = fopen(path, "rb");
