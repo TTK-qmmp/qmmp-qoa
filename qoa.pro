@@ -15,8 +15,6 @@ SOURCES += decoderqoafactory.cpp \
            qoahelper.cpp \
            libqoa/qoaplay.c
 
-INCLUDEPATH += $$PWD/libqoa
-
 #CONFIG += BUILD_PLUGIN_INSIDE
 contains(CONFIG, BUILD_PLUGIN_INSIDE){
     include($$PWD/../../plugins.pri)
