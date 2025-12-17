@@ -1,5 +1,6 @@
 This is a plugin for Qmmp (1.6.0 or greater) which supports QOA file.
-(Quite OK Audio File)
+
+Based on [qoa](https://github.com/phoboslab/qoa) (Quite OK Audio).
 
 The following packages are required, including development headers,
 which some vendors split into separate packages:

@@ -86,7 +86,9 @@ void DecoderQOAFactory::showAbout(QWidget *parent)
 {
     QMessageBox::about(parent, tr("About QOA Reader Plugin"),
                        tr("Qmmp QOA Reader Plugin") + "\n" +
-                       tr("Written by: Greedysky <greedysky@163.com>"));
+                       tr("Written by: Greedysky <greedysky@163.com>") + "\n" +
+                       tr("Based on the source code from the qoa") + "\n" +
+                       tr("Written by Dominic Szablewski (C) 2023"));
 }
 
 QString DecoderQOAFactory::translation() const
