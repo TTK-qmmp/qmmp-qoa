@@ -686,7 +686,7 @@ short *qoa_decode(const unsigned char *bytes, int size, qoa_desc *qoa) {
 
 		p += frame_size;
 		sample_index += frame_len;
-	} while (frame_size && sample_index < qoa->samples);
+	} while (frame_len == QOA_FRAME_LEN && sample_index < qoa->samples);
 
 	qoa->samples = sample_index;
 	return sample_data;
